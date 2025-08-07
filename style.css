@@ -133,12 +133,25 @@ section {
 .home .image {
     flex: 1 1 40rem;
     text-align: center;
-}
-
-.home .image img {
+}.home .image img {
     max-width: 100%;
     border-radius: 1rem;
     box-shadow: var(--box-shadow);
+}
+
+/* Profile picture styling - round shape and controlled size */
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50% !important; /* Circular shape */
+    object-fit: cover; /* Maintains aspect ratio and fills the container */
+    border: 5px solid var(--accent-color); /* Adds a border with accent color */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) !important;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 /* About Section */
