@@ -1,0 +1,347 @@
+/* General Styles */
+:root {
+    --main-color: #0c1822; /* Darker background */
+    --secondary-color: #122130; /* Slightly lighter for sections */
+    --accent-color: #3498db; /* Blue accent */
+    --text-color: #ecf0f1; /* Light text */
+    --light-text: #bdc3c7; /* Lighter grey for paragraphs */
+    --box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.2);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body {
+    background: var(--main-color);
+    color: var(--text-color);
+}
+
+section {
+    padding: 2rem 9%;
+    min-height: 100vh;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.highlight {
+    color: var(--accent-color);
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--accent-color);
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    letter-spacing: .1rem;
+}
+
+/* Header & Navigation */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--secondary-color);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: var(--light-text);
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color: var(--accent-color);
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.home .content {
+    flex: 1 1 40rem;
+}
+
+.home .content h3 {
+    font-size: 3rem;
+    color: var(--light-text);
+}
+
+.home .content h1 {
+    font-size: 5rem;
+    color: var(--text-color);
+}
+
+.home .content p {
+    font-size: 1.7rem;
+    color: var(--light-text);
+    padding: 1rem 0;
+}
+
+.home .image {
+    flex: 1 1 40rem;
+    text-align: center;
+}
+
+.home .image img {
+    max-width: 100%;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+/* About Section */
+.about {
+    background: var(--secondary-color);
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+}
+
+.about .row .content p {
+    font-size: 1.7rem;
+    color: var(--light-text);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.about .row .image {
+    flex: 1 1 40rem;
+    text-align: center;
+}
+
+.about .row .image img {
+    max-width: 100%;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+/* Skills, Projects, Certifications Box Styling */
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.box {
+    text-align: center;
+    background: var(--secondary-color);
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box i {
+    font-size: 5rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.box h3 {
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.box p {
+    font-size: 1.5rem;
+    color: var(--light-text);
+    padding: 1rem 0;
+}
+
+/* Projects Section */
+.projects {
+    background: var(--main-color);
+}
+
+.projects .box img {
+    height: 20rem;
+    object-fit: cover;
+    width: 100%;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.projects .box a.btn {
+    align-self: flex-start;
+}
+
+/* Certifications Section */
+.certifications {
+    background: var(--secondary-color);
+}
+
+/* Contact Section */
+.contact {
+    background: var(--main-color);
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.contact .contact-info,
+.contact .contact-form {
+    flex: 1 1 40rem;
+}
+
+.contact .contact-info h3 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.contact .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem;
+}
+
+.contact .info-item i {
+    color: var(--accent-color);
+    margin-right: 1.5rem;
+    width: 3rem;
+}
+
+.contact .info-item p {
+    color: var(--light-text);
+}
+
+.contact .social-links a {
+    font-size: 2.5rem;
+    color: var(--light-text);
+    margin-right: 1.5rem;
+}
+
+.contact .social-links a:hover {
+    color: var(--accent-color);
+}
+
+.contact .contact-form .box,
+.contact .contact-form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--secondary-color);
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    text-transform: none;
+}
+
+.contact .contact-form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2.5rem;
+    background: var(--secondary-color);
+    font-size: 1.7rem;
+    color: var(--light-text);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 991px) {
+    html { font-size: 55%; }
+    .header { padding: 2rem; }
+    section { padding: 2rem; }
+}
+
+@media (max-width: 768px) {
+    #menu-btn { display: inline-block; }
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--secondary-color);
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a {
+        display: block;
+        margin: 1.5rem;
+        padding: 1rem;
+        font-size: 2rem;
+        background: var(--main-color);
+        border-radius: .5rem;
+        text-align: center;
+    }
+    .about .row {
+        flex-direction: column-reverse;
+    }
+}
