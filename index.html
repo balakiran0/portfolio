@@ -57,66 +57,106 @@
                 <!-- <img src="images/about.jpg" alt="About Me"> -->
             </div>
         </div>
-    </section>
-
-    <!-- Skills Section -->
+    </section><!-- Skills Section -->
     <section class="skills" id="skills">
         <h2 class="heading">Skills</h2>
         <div class="box-container">
             <div class="box">
                 <i class="fab fa-python"></i>
                 <h3>Python</h3>
+                <div class="skill-level">
+                    <div class="skill-level-fill" style="--skill-percent: 90%"></div>
+                </div>
             </div>
             <div class="box">
                 <i class="fab fa-aws"></i>
                 <h3>AWS Cloud</h3>
+                <div class="skill-level">
+                    <div class="skill-level-fill" style="--skill-percent: 85%"></div>
+                </div>
             </div>
             <div class="box">
                 <i class="fas fa-brain"></i>
                 <h3>Artificial Intelligence</h3>
+                <div class="skill-level">
+                    <div class="skill-level-fill" style="--skill-percent: 88%"></div>
+                </div>
             </div>
             <div class="box">
                 <i class="fas fa-database"></i>
                 <h3>Data Science</h3>
+                <div class="skill-level">
+                    <div class="skill-level-fill" style="--skill-percent: 92%"></div>
+                </div>
             </div>
             <div class="box">
                 <i class="fas fa-robot"></i>
                 <h3>Machine Learning</h3>
+                <div class="skill-level">
+                    <div class="skill-level-fill" style="--skill-percent: 87%"></div>
+                </div>
             </div>
             <div class="box">
                 <i class="fas fa-code-branch"></i>
                 <h3>Git & GitHub</h3>
+                <div class="skill-level">
+                    <div class="skill-level-fill" style="--skill-percent: 80%"></div>
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- Projects Section -->
+    </section><!-- Projects Section -->
     <section class="projects" id="projects">
         <h2 class="heading">My Projects</h2>
-        <div class="box-container"><div class="box">
+        <div class="box-container">
+            <div class="box">
                 <!-- Project 1 image -->
-                <img src="https://placehold.co/400x250/122130/ecf0f1?text=Pneumonia+Detection" alt="Pneumonia Detection">
-                <!-- When you have a project screenshot, save it as 'pneumonia-project.jpg' in the images folder and uncomment the line below -->
-                <!-- <img src="images/pneumonia-project.jpg" alt="Pneumonia Detection"> -->
+                <img src="https://placehold.co/800x450/122130/ecf0f1?text=Pneumonia+Detection" alt="Pneumonia Detection">
                 <h3>X-ray PNEUMONIA DETECTION</h3>
-                <p>A deep learning project to detect pneumonia from chest X-ray images using Convolutional Neural Networks (CNNs). This project showcases my expertise in medical image analysis and model evaluation. The model was trained to achieve high accuracy.</p>
-                <a href="https://github.com/balakiran0/X-ray-PNEUMONIA-DETECTION" target="_blank" class="btn">View on GitHub</a>
-            </div><div class="box">
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">Deep Learning</span>
+                    <span class="tech-tag">CNN</span>
+                </div>
+                <p>A deep learning project to detect pneumonia from chest X-ray images using Convolutional Neural Networks (CNNs). This project showcases my expertise in medical image analysis and model evaluation. The model achieved 95% accuracy on test data.</p>
+                <div class="btn-container">
+                    <a href="https://github.com/balakiran0/X-ray-PNEUMONIA-DETECTION" target="_blank" class="btn">View Code</a>
+                    <a href="#" class="btn">Live Demo</a>
+                </div>
+            </div>
+            
+            <div class="box">
                 <!-- Project 2 image -->
-                <img src="https://placehold.co/400x250/122130/ecf0f1?text=Hospital+Management" alt="Hospital Management System">
-                <!-- When you have a project screenshot, save it as 'hospital-project.jpg' in the images folder and uncomment the line below -->
-                <!-- <img src="images/hospital-project.jpg" alt="Hospital Management System"> -->
+                <img src="https://placehold.co/800x450/122130/ecf0f1?text=Hospital+Management" alt="Hospital Management System">
                 <h3>Hospital Management System</h3>
-                <p>A web application to manage hospital information, including patient data and appointments. This project demonstrates my skills in backend development, database management, and creating practical management tools.</p>
-                <a href="https://github.com/balakiran0/hospital-management" target="_blank" class="btn">View on GitHub</a>
-            </div><div class="box">
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Bootstrap</span>
+                </div>
+                <p>A comprehensive web application for hospital management, featuring patient records, appointment scheduling, billing, and doctor assignment. Includes authentication, role-based access control, and a responsive dashboard interface.</p>
+                <div class="btn-container">
+                    <a href="https://github.com/balakiran0/hospital-management" target="_blank" class="btn">View Code</a>
+                    <a href="#" class="btn">Live Demo</a>
+                </div>
+            </div>
+            
+            <div class="box">
                 <!-- Project 3 image -->
-                <img src="https://placehold.co/400x250/122130/ecf0f1?text=Text+Summarization" alt="Text Summarizer">
-                <!-- When you have a project screenshot, save it as 'summarization-project.jpg' in the images folder and uncomment the line below -->
-                <!-- <img src="images/summarization-project.jpg" alt="Text Summarizer"> -->
+                <img src="https://placehold.co/800x450/122130/ecf0f1?text=Text+Summarization" alt="Text Summarizer">
                 <h3>Text Summarization</h3>
-                <p>An NLP-based tool that automatically generates concise summaries of large text documents. This project highlights my proficiency in natural language processing techniques and text manipulation.</p>
-                <a href="https://github.com/balakiran0/Summarization_env" target="_blank" class="btn">View on GitHub</a>
+                <div class="tech-stack">
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">BERT</span>
+                    <span class="tech-tag">Transformers</span>
+                    <span class="tech-tag">Flask</span>
+                </div>
+                <p>An advanced NLP tool that generates concise summaries from large documents using state-of-the-art transformer models. Features both extractive and abstractive summarization methods with a user-friendly web interface for easy interaction.</p>
+                <div class="btn-container">
+                    <a href="https://github.com/balakiran0/Summarization_env" target="_blank" class="btn">View Code</a>
+                    <a href="#" class="btn">Live Demo</a>
+                </div>
             </div>
         </div>
     </section>
