@@ -19,7 +19,6 @@
         <a href="#" class="logo">M.B.K.</a>
         <nav class="navbar">
             <a href="#home">Home</a>
-            <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#certifications">Certifications</a>
@@ -42,22 +41,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <h2 class="heading">About Me</h2>
-        <div class="row">
-            <div class="content">
-                <p>I am a dedicated B.Tech student at KL University, pursuing a degree in Artificial Intelligence & Data Science. I have a strong foundation in machine learning, deep learning, and data analysis. My passion lies in transforming complex data into actionable insights and creating innovative AI-driven applications.</p>
-                <p>Throughout my studies, I have gained hands-on experience through various projects that have sharpened my problem-solving abilities and technical expertise. I am always eager to learn new technologies and apply my skills to real-world challenges.</p>
-                <a href="#contact" class="btn">Get in Touch</a>
-            </div><div class="image">
-                <!-- About section image -->
-                <img src="https://placehold.co/400x400/122130/ecf0f1?text=About+Me" alt="About Me">
-                <!-- When you have an about section image, save it as 'about.jpg' in the images folder and uncomment the line below -->
-                <!-- <img src="images/about.jpg" alt="About Me"> -->
-            </div>
-        </div>
-    </section><!-- Skills Section -->
+    <!-- Skills Section -->
     <section class="skills" id="skills">
         <h2 class="heading">Skills</h2>
         <div class="box-container">
@@ -97,14 +81,30 @@
                 </div>
             </div>
             <div class="box">
-                <i class="fas fa-code-branch"></i>
-                <h3>Git & GitHub</h3>
+                <i class="fas fa-code"></i>
+                <h3>C</h3>
+                <div class="skill-level">
+                    <div class="skill-level-fill" style="--skill-percent: 75%"></div>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fab fa-python"></i>
+                <h3>Django</h3>
                 <div class="skill-level">
                     <div class="skill-level-fill" style="--skill-percent: 80%"></div>
                 </div>
             </div>
+            <div class="box">
+                <i class="fas fa-database"></i>
+                <h3>SQL</h3>
+                <div class="skill-level">
+                    <div class="skill-level-fill" style="--skill-percent: 85%"></div>
+                </div>
+            </div>
         </div>
-    </section><!-- Projects Section -->
+    </section>
+
+    <!-- Projects Section -->
     <section class="projects" id="projects">
         <h2 class="heading">My Projects</h2>
         <div class="box-container">
@@ -169,11 +169,25 @@
                 <i class="fas fa-certificate"></i>
                 <h3>IBM Certified Python Developer</h3>
                 <p>Successfully completed the IBM Python for Data Science and AI course, demonstrating strong programming skills in Python for data-related tasks.</p>
+                <a href="#" class="btn view-certificate-btn" data-certificate-url="https://courses.etrain.skillsnetwork.site/certificates/dbb3ef7a7b024ae88a8a3842d2fb8132">View Certificate</a>
             </div>
             <div class="box">
                 <i class="fas fa-cloud"></i>
                 <h3>AWS Cloud Certified</h3>
                 <p>Certified in AWS Cloud, with a foundational understanding of AWS services, security, and cloud architecture. This certification highlights my cloud computing knowledge.</p>
+                <a href="#" class="btn view-certificate-btn" data-certificate-url="https://placehold.co/600x400/122130/ecf0f1?text=AWS+Cloud+Certificate">View Certificate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section class="internship" id="internship">
+        <h2 class="heading">Internships</h2>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-briefcase"></i>
+                <h3>AWS Cloud Virtual Internship - Cohort 7</h3>
+                <p>Participated in the AWS Cloud Virtual Internship, gaining practical experience in cloud computing and AWS services.</p>
             </div>
         </div>
     </section>
@@ -216,6 +230,13 @@
     <footer class="footer">
         <p>&copy; 2024 M.B.K. All Rights Reserved.</p>
     </footer>
+
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="certificateImage" src="" alt="Certificate">
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
